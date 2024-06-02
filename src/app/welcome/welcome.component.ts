@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-welcome',
+  selector: "app-welcome",
   standalone: true,
   imports: [],
   template: `
-    <p>
-      welcome works!
-    </p>
+    <h1>Welcome to {{ title }}!</h1>
+    <p>welcome works!</p>
   `,
-  styles: ``
+  styles: ``,
 })
 export class WelcomeComponent {
-
+  title = "use-local-fonts";
 }

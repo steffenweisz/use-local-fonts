@@ -1,17 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { WelcomeComponent } from "./welcome/welcome.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
+  template: ` <router-outlet /> `,
   styles: [],
+  imports: [RouterOutlet, WelcomeComponent],
 })
-export class AppComponent {
-  title = 'use-local-fonts';
-}
+export class AppComponent {}
